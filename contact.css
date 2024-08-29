@@ -1,0 +1,165 @@
+/* Existing CSS */
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 15px;
+  color: #042f64;
+}
+
+.new:hover {
+  background-color: #f4d161;
+  cursor: pointer;
+  padding-block: 15px;
+  gap: 10%;
+  border-radius: 10%;
+}
+
+.section1, .section2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+
+.details ul, .details2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.get {
+  text-align: center;
+  color: #f4d161;
+  padding-bottom: 50px;
+}
+
+.container {
+  margin-left: 70px;
+}
+
+.p1, .p2 {
+  font-size: 16px;
+  color: rgb(68, 68, 68);
+}
+
+span {
+  color: #f4d161;
+}
+
+form {
+  color: #042f64;
+}
+
+input {
+  width: 250px;
+  height: 28px;
+  margin-right: 60px;
+  background-color: rgb(207, 207, 207);
+  border-style: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 200px;
+  background-color: #f4d161;
+  color: #042f64;
+  border-style: none;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+.footer, .end {
+  background-color: #042f64;
+  margin-top: 30px;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end .end-c {
+  padding: 30px;
+}
+
+.end .end-c h3 {
+  color: #f4d161;
+}
+
+.end .end-c p {
+  color: white;
+  padding-top: 30px;
+}
+
+/* New Responsive CSS */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .menu ul li {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .section1, .section2 {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .details ul, .details2 {
+    display: block;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .get {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+
+  .p1, .p2 {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .end {
+    flex-direction: column;
+  }
+
+  .end .end-c {
+    margin-bottom: 20px;
+  }
+}
